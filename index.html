@@ -153,8 +153,8 @@ header { display: flex; align-items: center; justify-content: space-between; pad
 </div>
 
 <script>
-// ── IMPORTANT: Replace with your Render backend URL ──
-const BACKEND_URL = 'https://YOUR_RENDER_URL.onrender.com';
+// ── Your Render Backend URL ──
+const BACKEND_URL = 'https://studymind-backend-ircg.onrender.com';
 
 let uploadedFiles = [];
 let messages = [];
@@ -330,7 +330,7 @@ function addThinking() {
   return row;
 }
 
-// ── Backend API Call ──
+// ── Backend Call ──
 async function callBackend(userQuestion) {
   const readyFiles = uploadedFiles.filter(f => f.status === 'ready' && f.content);
   let notesContext = '';
